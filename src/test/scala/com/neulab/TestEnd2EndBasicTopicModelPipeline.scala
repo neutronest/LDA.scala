@@ -10,12 +10,12 @@ class TestEnd2EndBasicTopicModelPipeline extends FlatSpec with Matchers{
     0,1,2,3,4
   )
   val X = DenseMatrix(
-    (0,0,1,2,2),
-    (0,0,1,1,1),
-    (0,1,2,2,2),
-    (4,4,4,4,4),
-    (3,3,4,4,4),
-    (3,4,4,4,4)
+    (0,0,1,2,2,1,2,2),
+    (0,0,1,1,1,1,1,1),
+    (0,1,2,2,2,2,2,2),
+    (4,4,4,4,4,4,4,4),
+    (3,3,4,4,4,3,4,3),
+    (3,4,4,4,4,4,4,4)
   )
   val nDocuments = X.rows
   val nVocab = W.length
