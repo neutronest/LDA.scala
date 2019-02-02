@@ -6,8 +6,8 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class TestEnd2EndBasicTopicModelPipeline extends FlatSpec with Matchers{
 
-  it should "Test End2End Pipeline" in {
 
+  it should "Test End2End Pipeline" in {
     val W = DenseVector(
       0,1,2,3,4
     )
@@ -38,8 +38,9 @@ class TestEnd2EndBasicTopicModelPipeline extends FlatSpec with Matchers{
     assert(topicResult(0) == topicResult(1))
     assert(topicResult(1) == topicResult(2))
     assert(topicResult(2) != topicResult(3))
-    assert(topicResult(3) != topicResult(4))
+    assert(topicResult(3) == topicResult(4))
     assert(topicResult(4) == topicResult(5))
+
   }
 
 }
