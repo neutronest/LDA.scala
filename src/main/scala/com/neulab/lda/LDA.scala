@@ -9,6 +9,7 @@ import breeze.stats.distributions
 import breeze.numerics.{exp, log, log1p}
 import breeze.stats.distributions.{Dirichlet, Multinomial}
 
+
 class LDA(
            var alpha: Double,
            var gamma: Double,

@@ -15,7 +15,7 @@ class TestBreeze extends FlatSpec with Matchers {
 
     val gaussianDistribution = new Gaussian(1.0, 2.0)
     var muAcc = 0.0
-    val iterNum = 100000
+    val iterNum = 500000
 
     for (i <- 1 to iterNum) {
       muAcc += gaussianDistribution.draw()
