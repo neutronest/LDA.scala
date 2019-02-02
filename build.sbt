@@ -32,6 +32,7 @@ lazy val root = (project in file(".")).settings(
       // The visualization library is distributed separately as well.
       // It depends on LGPL code
       "org.scalanlp" %% "breeze-viz" % "0.13.2"
+
     ),
     resolvers += "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
 
