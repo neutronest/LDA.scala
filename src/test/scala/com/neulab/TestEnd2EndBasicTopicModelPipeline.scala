@@ -6,7 +6,6 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class TestEnd2EndBasicTopicModelPipeline extends FlatSpec with Matchers{
 
-
   it should "Test End2End Pipeline" in {
     val W = DenseVector(
       0,1,2,3,4
