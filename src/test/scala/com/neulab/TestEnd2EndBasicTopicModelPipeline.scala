@@ -40,7 +40,6 @@ class TestEnd2EndBasicTopicModelPipeline extends FlatSpec with Matchers{
     assert(topicResult(2) != topicResult(3))
     assert(topicResult(3) == topicResult(4))
     assert(topicResult(4) == topicResult(5))
-
   }
 
 }
